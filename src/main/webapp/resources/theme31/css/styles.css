@@ -1,0 +1,107 @@
+@CHARSET "ISO-8859-1";
+
+body{
+    margin:0px;
+    background:#edf9ff;
+	overflow-x:scroll;
+}
+
+.header-cont {
+    width:980px;
+    position:fixed;
+    top:50px;
+}
+.header {
+    height:40px;
+    background:#133647;
+    width:100%;
+    margin:0px;
+}
+.profile-pic {
+	position:relative;
+	left:780px;
+	top:-110px;
+	z-index:100;
+}
+.content {
+    width:960px;
+    background: #F0F0F0;
+    border: 1px solid #CCC;
+    height: 2000px;
+    margin: 70px auto;
+}
+.profileName {
+	position:fixed;
+	font-family: "Arial", Georgia, Serif;
+    font-weight: bold;
+    font-size:38px;
+    top:4px;
+    left:20px;
+    width:450px;    
+}
+.profileTitle {
+	position:absolute;
+    font-weight:normal;
+    font-size:14px;
+    left:460px;
+    top:5px;
+    width:330px;
+}
+.profileAddress {
+	position:absolute;
+    font-weight:normal;
+    font-size:14px;
+    left:460px;  
+    top:22px;
+    width:330px;  
+}
+.summary {
+	position:absolute;
+	font-family: "Arial", Georgia, Serif;
+    font-weight:normal;
+    font-size:14px;
+    left:125px;  
+    top:130px;
+    width:730px;
+    opacity:0.25;	
+    z-index:100;
+}
+
+div.myImage
+{
+    display: none;
+}
+
+.logoutbutton {
+  position:relative;
+  float:left;
+  width:145px;
+  margin-top:500px;
+  margin-left:10px;
+  background:#3498db;
+  color:#fff;
+  font-weight:400;
+  text-shadow:1px 1px 0px #2d7baf;
+  box-shadow:0px 3px 0px #2d7baf;
+  -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+}
+
+input {
+  display:block;
+  width:315px;
+  padding:14px;
+  -webkit-border-radius:6px;
+     -moz-border-radius:6px;
+          border-radius:6px;
+  border:0;
+  margin-bottom:12px;
+  color:#7f8c8d;
+  font-weight:600;
+  font-size:16px;
+}
+
+input:focus {
+  background:#fafafa;
+}

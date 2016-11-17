@@ -1,0 +1,25 @@
+<b:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:b="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+
+
+	<http disable-url-rewriting="false">
+		<headers disabled="true"/>
+		<csrf disabled="true"/>
+		<intercept-url pattern="/home*" access="hasRole('ROLE_USER')" />
+		<form-login login-page="/mylogin" authentication-failure-url="/mylogin?error=y"/>
+		<logout logout-success-url="/home"/>
+	</http>
+
+	<authentication-manager>
+		<authentication-provider>
+			<user-service>
+				<user name="ravindra_k01" password="123456" authorities="ROLE_USER" />
+				<user name="admin" password="123456" authorities="ROLE_ADMIN" />
+				<user name="dba" password="123456" authorities="ROLE_DBA" />
+			</user-service>
+		</authentication-provider>
+	</authentication-manager>
+	
+</b:beans>
